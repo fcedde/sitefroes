@@ -134,8 +134,8 @@
     .section {
       padding: 90px 0;
     }
-    .section-gray {
-      background: #f8f8f8;
+    .section-beige {
+      background: #F8F4EF;
     }
     .section h2 {
       font-family: 'Poppins', sans-serif;
@@ -157,38 +157,30 @@
       line-height: 1.75;
     }
 
-    /* Serviços */
+    /* Serviços - Vertical */
     .services-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 28px;
-    }
-    @media (min-width: 768px) {
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (min-width: 1024px) {
-      .services-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      max-width: 780px;
+      margin: 0 auto;
     }
     .service-card {
       background: #F8F4EF;
       border-radius: 18px;
-      padding: 28px 24px 32px;
+      padding: 28px 28px 32px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.06);
       transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
     }
     .service-card:hover {
-      transform: translateY(-8px) scale(1.03);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.1);
     }
     .service-card h3 {
       font-family: 'Poppins', sans-serif;
-      font-size: 1.45rem;
+      font-size: 1.5rem;
       font-weight: 600;
       margin-bottom: 16px;
       text-align: center;
@@ -197,25 +189,28 @@
     }
     .service-card img {
       width: 100%;
-      height: 160px;
+      height: 220px;
       object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 20px;
+      border-radius: 14px;
+      margin-bottom: 22px;
       display: block;
     }
     .service-card ul {
       list-style: none;
       padding: 0;
       margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 24px;
     }
     .service-card li {
       font-family: 'Inter', sans-serif;
       font-size: 0.98rem;
       font-weight: 600;
       color: #333;
-      padding: 9px 0;
+      padding: 8px 0;
       position: relative;
-      padding-left: 20px;
+      padding-left: 18px;
       line-height: 1.45;
     }
     .service-card li::before {
@@ -225,7 +220,7 @@
       font-size: 1.1rem;
       position: absolute;
       left: 0;
-      top: 8px;
+      top: 7px;
     }
 
     /* Carrossel */
@@ -318,11 +313,12 @@
     .hours-box {
       max-width: 360px;
       margin: 44px auto;
-      background: #f8f8f8;
+      background: #F8F4EF;
       padding: 36px;
       border-radius: 18px;
       text-align: left;
       transition: all 0.3s ease;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
     }
     .hours-box:hover {
       transform: translateY(-4px);
@@ -527,11 +523,17 @@
       .section h2 {
         font-size: 1.85rem;
       }
+      .service-card {
+        padding: 24px 20px 28px;
+      }
       .service-card h3 {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
       }
       .service-card img {
-        height: 150px;
+        height: 180px;
+      }
+      .service-card ul {
+        grid-template-columns: 1fr;
       }
       .service-card li {
         font-size: 0.95rem;
@@ -614,7 +616,7 @@
     </div>
   </section>
 
-  <section id="sobre" class="section section-gray">
+  <section id="sobre" class="section section-beige">
     <div class="container">
       <h2>Sobre o Instituto</h2>
       <p>
