@@ -142,7 +142,7 @@
       font-size: 2.2rem;
       font-weight: 600;
       text-align: center;
-      margin-bottom: 52px;
+      margin-bottom: 40px;
       letter-spacing: -0.03em;
       line-height: 1.2;
     }
@@ -152,9 +152,53 @@
       font-size: 1.15rem;
       font-weight: 400;
       max-width: 720px;
-      margin: 0 auto;
+      margin: 0 auto 60px;
       text-align: center;
       line-height: 1.75;
+    }
+
+    /* Fundador */
+    .founder-block {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 20px;
+      padding: 36px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+    .founder-photo {
+      flex-shrink: 0;
+      width: 280px;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .founder-content h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #111;
+      letter-spacing: -0.02em;
+    }
+    .founder-content .founder-role {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #C4A484;
+      margin-bottom: 18px;
+      letter-spacing: 0.02em;
+    }
+    .founder-content p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      color: #444;
+      line-height: 1.75;
+      margin-bottom: 14px;
     }
 
     /* Serviços - Vertical */
@@ -523,6 +567,17 @@
       .section h2 {
         font-size: 1.85rem;
       }
+      .founder-block {
+        flex-direction: column;
+        padding: 28px 22px;
+        gap: 28px;
+        text-align: center;
+      }
+      .founder-photo {
+        width: 100%;
+        max-width: 280px;
+        height: 300px;
+      }
       .service-card {
         padding: 24px 20px 28px;
       }
@@ -624,6 +679,23 @@
         Unimos técnicas modernas com um ambiente acolhedor para que você se sinta bem em todos os momentos. 
         Aqui, cada detalhe é pensado para valorizar sua beleza de forma natural e sofisticada.
       </p>
+
+      <!-- Bloco do Fundador -->
+      <div class="founder-block">
+        <img src="fundador.jpg" alt="Fundador do Instituto de Beleza Froes" class="founder-photo">
+        <div class="founder-content">
+          <h3>Conheça nosso fundador</h3>
+          <div class="founder-role">Fundador & Especialista</div>
+          <p>
+            Com anos de dedicação e paixão pela área da beleza, nosso fundador criou o Instituto de Beleza Froes 
+            com o objetivo de oferecer um espaço onde cada cliente se sinta especial e bem cuidada.
+          </p>
+          <p>
+            Sua visão une técnicas atualizadas, produtos de qualidade e um atendimento humanizado, 
+            transformando o salão em referência de excelência e acolhimento em Lavras.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
